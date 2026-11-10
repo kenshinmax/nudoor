@@ -1,0 +1,23 @@
+export const healthCheck = {
+  title: "Payments Health Check",
+  subtitle: "A one-week review of your Stripe account that finds money you're losing and shows you how to get it back.",
+  turnaround: "Report in 5 business days",
+  checklist: [
+    "Checkout speed and drop-off points",
+    "Payment methods and wallets turned on",
+    "Failed payment and retry settings",
+    "Subscription renewal and dunning setup",
+    "Radar fraud rules and dispute history",
+    "Processing fees and pricing plan",
+    "Payout timing and bank setup",
+    "Sales tax and VAT collection",
+    "Receipts, invoices, and customer emails",
+    "Webhook reliability and error logs",
+    "API version and deprecated features",
+    "Team access and API key permissions",
+    "Customer portal and self-service options",
+    "Refund and dispute workflows",
+    "Reporting and accounting sync",
+  ],
+  guarantee: "If we don't find at least $1,000 a year in savings or recovered revenue, the Health Check is free.",
+} as const;
