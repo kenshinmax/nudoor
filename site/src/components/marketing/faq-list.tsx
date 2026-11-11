@@ -10,7 +10,7 @@ export function FaqList({ items, structuredData = true }: { items: readonly FaqI
         {items.map((item, i) => (
           <AccordionItem key={item.q} value={`faq-${i}`} className="rounded-xl border border-line bg-white px-5 last:border-b">
             <AccordionTrigger className="py-4 text-base font-semibold hover:no-underline">{item.q}</AccordionTrigger>
-            <AccordionContent className="text-[15px] text-slate-600">{item.a}</AccordionContent>
+            <AccordionContent className="text-[15px] text-neutral-600">{item.a}</AccordionContent>
           </AccordionItem>
         ))}
       </Accordion>

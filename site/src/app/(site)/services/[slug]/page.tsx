@@ -53,30 +53,30 @@ export default async function ServicePage({ params }: PageProps<"/services/[slug
             <ul className="mt-4 space-y-2.5">
               {service.includes.map((item) => (
                 <li key={item} className="flex gap-3">
-                  <CheckIcon aria-hidden className="mt-1 size-4 flex-none text-emerald-500" strokeWidth={3} />
+                  <CheckIcon aria-hidden className="mt-1 size-4 flex-none text-neutral-900" strokeWidth={3} />
                   {item}
                 </li>
               ))}
             </ul>
             <h2 className="mt-10 text-2xl font-bold">Who it&apos;s for</h2>
-            <ul className="mt-4 list-disc space-y-1.5 pl-5 text-slate-700">
+            <ul className="mt-4 list-disc space-y-1.5 pl-5 text-neutral-700">
               {service.audience.map((a) => (
                 <li key={a}>{a}</li>
               ))}
             </ul>
           </div>
           <Card className="h-fit gap-0 rounded-xl p-6 text-base ring-line">
-            <p className="font-mono text-xs font-semibold tracking-[0.06em] text-slate-500 uppercase">Price</p>
+            <p className="font-mono text-xs font-semibold tracking-[0.06em] text-neutral-500 uppercase">Price</p>
             <p className="mt-1 text-3xl font-extrabold">{servicePriceLabel(service)}</p>
-            <p className="mt-4 font-mono text-xs font-semibold tracking-[0.06em] text-slate-500 uppercase">Timeline</p>
+            <p className="mt-4 font-mono text-xs font-semibold tracking-[0.06em] text-neutral-500 uppercase">Timeline</p>
             <p className="mt-1 font-semibold">{service.timeline}</p>
-            <p className="mt-4 font-mono text-xs font-semibold tracking-[0.06em] text-slate-500 uppercase">You get</p>
-            <ul className="mt-1 list-disc space-y-1 pl-5 text-slate-700">
+            <p className="mt-4 font-mono text-xs font-semibold tracking-[0.06em] text-neutral-500 uppercase">You get</p>
+            <ul className="mt-1 list-disc space-y-1 pl-5 text-neutral-700">
               {service.deliverables.map((d) => (
                 <li key={d}>{d}</li>
               ))}
             </ul>
-            <p className="mt-4 font-mono text-xs font-semibold tracking-[0.06em] text-slate-500 uppercase">Stripe products</p>
+            <p className="mt-4 font-mono text-xs font-semibold tracking-[0.06em] text-neutral-500 uppercase">Stripe products</p>
             <ProductTags products={service.stripeProducts} className="mt-2" />
             <Button asChild size="pill" className="mt-6">
               <Link href="/contact#brief">Start with a quote</Link>

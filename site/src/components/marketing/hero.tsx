@@ -16,7 +16,7 @@ export function Hero() {
           <h1 className="mt-3 text-[clamp(36px,5vw,58px)] leading-[1.08] font-extrabold tracking-tight text-balance">
             {hero.title}
           </h1>
-          <p className="mt-4 max-w-[540px] text-lg leading-relaxed text-slate-700 md:text-[19px]">{hero.lead}</p>
+          <p className="mt-4 max-w-[540px] text-lg leading-relaxed text-neutral-700 md:text-[19px]">{hero.lead}</p>
           <div className="mt-7 flex flex-wrap gap-3">
             <Button asChild size="pill">
               <Link href={site.bookCallHref} data-track="cta_book_call">

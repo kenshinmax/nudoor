@@ -24,14 +24,14 @@ export default function ResourcesPage() {
             {posts.map((p) => (
               <li key={p.slug}>
                 <Card className="h-full gap-0 rounded-xl p-6 text-base ring-line">
-                  <p className="font-mono text-xs font-semibold tracking-[0.06em] text-indigo-600 uppercase">{p.kind}</p>
+                  <p className="font-mono text-xs font-semibold tracking-[0.06em] text-foreground uppercase">{p.kind}</p>
                   <h2 className="mt-2 text-lg leading-snug font-bold">
-                    <Link href={`/resources/${p.slug}`} className="hover:text-indigo-600">
+                    <Link href={`/resources/${p.slug}`} className="hover:text-foreground">
                       {p.title}
                     </Link>
                   </h2>
-                  <p className="mt-2 text-slate-500">{p.description}</p>
-                  <p className="mt-auto pt-4 text-sm text-slate-500">
+                  <p className="mt-2 text-neutral-500">{p.description}</p>
+                  <p className="mt-auto pt-4 text-sm text-neutral-500">
                     <time dateTime={p.date}>{dateFmt.format(new Date(`${p.date}T00:00:00Z`))}</time> · {p.readingMinutes} min read
                   </p>
                 </Card>

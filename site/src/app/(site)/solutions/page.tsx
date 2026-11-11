@@ -22,14 +22,14 @@ export default function SolutionsPage() {
             {segments.map((s) => (
               <li key={s.slug}>
                 <Card className="h-full gap-0 rounded-xl p-6 text-base ring-line">
-                  <p className="font-mono text-xs font-semibold tracking-[0.06em] text-indigo-600 uppercase">{s.short}</p>
+                  <p className="font-mono text-xs font-semibold tracking-[0.06em] text-foreground uppercase">{s.short}</p>
                   <h2 className="mt-2 text-xl font-bold">
-                    <Link href={`/solutions/${s.slug}`} className="hover:text-indigo-600">
+                    <Link href={`/solutions/${s.slug}`} className="hover:text-foreground">
                       {s.title}
                     </Link>
                   </h2>
-                  <p className="mt-2 text-slate-500">{s.intro}</p>
-                  <Link href={`/solutions/${s.slug}`} className="mt-4 font-semibold text-indigo-600 hover:text-indigo-700" aria-hidden tabIndex={-1}>
+                  <p className="mt-2 text-neutral-500">{s.intro}</p>
+                  <Link href={`/solutions/${s.slug}`} className="mt-4 font-semibold text-foreground hover:text-foreground" aria-hidden tabIndex={-1}>
                     See how we help →
                   </Link>
                 </Card>

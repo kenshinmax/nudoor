@@ -19,11 +19,11 @@ export function WorkFilter({ studies, labels }: { studies: CaseStudy[]; labels: 
         aria-label="Filter case studies by business type"
         className="mb-8 flex-wrap"
       >
-        <ToggleGroupItem value="all" className="rounded-full px-4 data-[state=on]:bg-indigo-600 data-[state=on]:text-white">
+        <ToggleGroupItem value="all" className="rounded-full px-4 data-[state=on]:bg-primary data-[state=on]:text-white">
           All
         </ToggleGroupItem>
         {present.map((seg) => (
-          <ToggleGroupItem key={seg} value={seg} className="rounded-full px-4 data-[state=on]:bg-indigo-600 data-[state=on]:text-white">
+          <ToggleGroupItem key={seg} value={seg} className="rounded-full px-4 data-[state=on]:bg-primary data-[state=on]:text-white">
             {labels[seg]}
           </ToggleGroupItem>
         ))}

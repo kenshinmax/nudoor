@@ -13,16 +13,16 @@ export function TrustStrip() {
             <PartnerBadge />
           </li>
           {certs.map((c) => (
-            <li key={c.name} className="rounded-lg border border-line bg-surface px-3 py-2 text-[13px] font-semibold text-slate-600">
+            <li key={c.name} className="rounded-lg border border-line bg-surface px-3 py-2 text-[13px] font-semibold text-neutral-600">
               {c.name}
               {c.count > 1 ? ` ×${c.count}` : ""}
             </li>
           ))}
-          <li className="rounded-lg px-1 py-2 text-[13px] text-slate-500">
+          <li className="rounded-lg px-1 py-2 text-[13px] text-neutral-500">
             <b className="text-ink">{site.stats.value}</b> {site.stats.label}
           </li>
         </ul>
-        <ul className="flex flex-wrap gap-8 font-extrabold tracking-[0.02em] text-slate-400" aria-label="Clients">
+        <ul className="flex flex-wrap gap-8 font-extrabold tracking-[0.02em] text-neutral-400" aria-label="Clients">
           {site.clientLogos.map((l) => (
             <li key={l}>{l}</li>
           ))}

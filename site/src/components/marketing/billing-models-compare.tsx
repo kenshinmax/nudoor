@@ -50,20 +50,20 @@ export function BillingModelsCompare() {
         {models.map((m) => (
           <Card key={m.key} className="gap-0 rounded-xl p-6 text-base ring-line" data-testid={`billing-model-${m.key}`}>
             <h3 className="text-xl font-bold">{m.name}</h3>
-            <p className="mt-1 text-slate-600">{m.fits}</p>
-            <h4 className="mt-5 font-mono text-xs font-semibold tracking-[0.06em] text-slate-500 uppercase">Good for</h4>
-            <ul className="mt-2 list-disc pl-5 text-[15px] text-slate-700">
+            <p className="mt-1 text-neutral-600">{m.fits}</p>
+            <h4 className="mt-5 font-mono text-xs font-semibold tracking-[0.06em] text-neutral-500 uppercase">Good for</h4>
+            <ul className="mt-2 list-disc pl-5 text-[15px] text-neutral-700">
               {m.examples.map((e) => (
                 <li key={e}>{e}</li>
               ))}
             </ul>
-            <h4 className="mt-5 font-mono text-xs font-semibold tracking-[0.06em] text-slate-500 uppercase">What we set up</h4>
-            <ul className="mt-2 list-disc pl-5 text-[15px] text-slate-700">
+            <h4 className="mt-5 font-mono text-xs font-semibold tracking-[0.06em] text-neutral-500 uppercase">What we set up</h4>
+            <ul className="mt-2 list-disc pl-5 text-[15px] text-neutral-700">
               {m.setup.map((e) => (
                 <li key={e}>{e}</li>
               ))}
             </ul>
-            <h4 className="mt-5 font-mono text-xs font-semibold tracking-[0.06em] text-slate-500 uppercase">Example invoice</h4>
+            <h4 className="mt-5 font-mono text-xs font-semibold tracking-[0.06em] text-neutral-500 uppercase">Example invoice</h4>
             <table className="mt-2 w-full rounded-lg bg-surface font-mono text-[13px]">
               <tbody>
                 {m.invoice.map(([label, amount], i) => (
@@ -82,13 +82,13 @@ export function BillingModelsCompare() {
         <ol className="mt-3 grid gap-3 md:grid-cols-3">
           {questions.map((x, i) => (
             <li key={x.q} className="rounded-lg bg-surface p-4">
-              <span className="font-mono text-xs font-bold text-indigo-600">{String(i + 1).padStart(2, "0")}</span>
+              <span className="font-mono text-xs font-bold text-foreground">{String(i + 1).padStart(2, "0")}</span>
               <p className="mt-1 font-medium">{x.q}</p>
-              <p className="text-sm text-slate-500">{x.a}</p>
+              <p className="text-sm text-neutral-500">{x.a}</p>
             </li>
           ))}
         </ol>
-        <p className="mt-4 text-sm text-slate-500">Not sure? We&apos;ll help you pick on a free call, and you can switch models later without moving customers.</p>
+        <p className="mt-4 text-sm text-neutral-500">Not sure? We&apos;ll help you pick on a free call, and you can switch models later without moving customers.</p>
       </div>
     </div>
   );

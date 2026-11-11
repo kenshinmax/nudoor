@@ -29,7 +29,7 @@ export function MobileNav({ links }: { links: readonly NavLink[] }) {
                 <Link
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className="block border-b border-line py-3 text-base font-medium text-ink hover:text-indigo-600"
+                  className="block border-b border-line py-3 text-base font-medium text-ink hover:text-foreground"
                 >
                   {item.label}
                 </Link>

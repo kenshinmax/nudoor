@@ -29,10 +29,10 @@ export default async function PostPage({ params }: PageProps<"/resources/[slug]"
         <Container className="max-w-[720px]">
           <Eyebrow>{post.kind}</Eyebrow>
           <h1 className="mt-3 text-[clamp(30px,4vw,44px)] leading-tight font-extrabold tracking-tight">{post.title}</h1>
-          <p className="mt-3 text-sm text-slate-500">
+          <p className="mt-3 text-sm text-neutral-500">
             <time dateTime={post.date}>{dateFmt.format(new Date(`${post.date}T00:00:00Z`))}</time> · {post.readingMinutes} min read
           </p>
-          <div className="mt-8 space-y-5 text-[17px] leading-relaxed text-slate-700">
+          <div className="mt-8 space-y-5 text-[17px] leading-relaxed text-neutral-700">
             {post.body.map((block, i) => {
               if (block.type === "h2") return <h2 key={i} className="pt-4 text-2xl font-bold text-ink">{block.text}</h2>;
               if (block.type === "ul")

@@ -18,13 +18,13 @@ const footerLinks = [
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-line py-12 text-sm text-slate-500">
+    <footer className="border-t border-line py-12 text-sm text-neutral-500">
       <Container>
         <div className="flex flex-wrap justify-between gap-6">
           <div>
             <Logo className="text-ink" />
             <p className="mt-2.5">
-              <a href={`mailto:${site.email}`} className="hover:text-indigo-600">
+              <a href={`mailto:${site.email}`} className="hover:text-foreground">
                 {site.email}
               </a>{" "}
               · {site.hours}
@@ -34,7 +34,7 @@ export function SiteFooter() {
             <ul className="flex max-w-xl flex-wrap gap-x-5 gap-y-2">
               {footerLinks.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="hover:text-indigo-600">
+                  <Link href={l.href} className="hover:text-foreground">
                     {l.label}
                   </Link>
                 </li>
@@ -50,12 +50,12 @@ export function SiteFooter() {
 
 export function FocusedFooter() {
   return (
-    <footer className="border-t border-line py-8 text-xs text-slate-500">
+    <footer className="border-t border-line py-8 text-xs text-neutral-500">
       <Container className="flex flex-wrap justify-between gap-4">
         <p className="max-w-[720px]">{partnerDisclaimer()}</p>
         <p className="flex gap-4">
-          <Link href="/legal/privacy" className="hover:text-indigo-600">Privacy</Link>
-          <Link href="/legal/terms" className="hover:text-indigo-600">Terms</Link>
+          <Link href="/legal/privacy" className="hover:text-foreground">Privacy</Link>
+          <Link href="/legal/terms" className="hover:text-foreground">Terms</Link>
         </p>
       </Container>
     </footer>

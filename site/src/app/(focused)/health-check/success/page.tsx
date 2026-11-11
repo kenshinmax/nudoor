@@ -34,9 +34,9 @@ async function Confirmation({ searchParams }: { searchParams: PageProps<"/health
     return (
       <div role="status">
         <h1 className="text-3xl font-extrabold tracking-tight">We couldn&apos;t confirm this payment</h1>
-        <p className="mt-3 text-slate-600">
+        <p className="mt-3 text-neutral-600">
           If you were charged, Stripe has emailed you a receipt and we&apos;ll be in touch. Questions? Email{" "}
-          <a href={`mailto:${site.email}`} className="font-semibold text-indigo-600 hover:underline">
+          <a href={`mailto:${site.email}`} className="font-semibold text-foreground hover:underline">
             {site.email}
           </a>
           .
@@ -50,12 +50,12 @@ async function Confirmation({ searchParams }: { searchParams: PageProps<"/health
 
   return (
     <div role="status">
-      <CheckCircle2Icon aria-hidden className="size-10 text-emerald-600" />
+      <CheckCircle2Icon aria-hidden className="size-10 text-neutral-900" />
       <h1 className="mt-3 text-3xl font-extrabold tracking-tight">You&apos;re booked. Thank you!</h1>
-      <p className="mt-3 text-slate-600">
+      <p className="mt-3 text-neutral-600">
         We&apos;ve sent a confirmation{result.email ? ` to ${result.email}` : ""}. Here&apos;s what happens next:
       </p>
-      <ol className="mt-5 list-decimal space-y-2 pl-5 text-slate-700">
+      <ol className="mt-5 list-decimal space-y-2 pl-5 text-neutral-700">
         <li>We&apos;ll email you within one business day to schedule a 20-minute kickoff.</li>
         <li>You&apos;ll grant us read-only access to your Stripe account. We&apos;ll show you how.</li>
         <li>Your report arrives within 5 business days, followed by a walkthrough call.</li>
@@ -70,7 +70,7 @@ async function Confirmation({ searchParams }: { searchParams: PageProps<"/health
 export default function SuccessPage({ searchParams }: PageProps<"/health-check/success">) {
   return (
     <Container className="max-w-2xl py-16 md:py-24">
-      <Suspense fallback={<p className="text-slate-500">Confirming your payment…</p>}>
+      <Suspense fallback={<p className="text-neutral-500">Confirming your payment…</p>}>
         <Confirmation searchParams={searchParams} />
       </Suspense>
     </Container>

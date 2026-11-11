@@ -53,7 +53,7 @@ export default function AboutPage() {
           <ul className="mt-5 space-y-3">
             {security.map((s) => (
               <li key={s} className="flex gap-3">
-                <ShieldCheckIcon aria-hidden className="mt-0.5 size-5 flex-none text-emerald-600" />
+                <ShieldCheckIcon aria-hidden className="mt-0.5 size-5 flex-none text-neutral-900" />
                 {s}
               </li>
             ))}
@@ -61,12 +61,12 @@ export default function AboutPage() {
           {site.partnerStatus !== "none" ? (
             <div className="mt-10 rounded-xl border border-line bg-white p-6">
               <PartnerBadge />
-              <p className="mt-3 text-slate-600">We&apos;re a member of the Stripe Partner Ecosystem on the Services track.</p>
+              <p className="mt-3 text-neutral-600">We&apos;re a member of the Stripe Partner Ecosystem on the Services track.</p>
             </div>
           ) : null}
-          <p className="mt-10 text-slate-600">
+          <p className="mt-10 text-neutral-600">
             Based in the {site.areaServed}. Available {site.hours}. Email{" "}
-            <a href={`mailto:${site.email}`} className="font-semibold text-indigo-600 hover:underline">
+            <a href={`mailto:${site.email}`} className="font-semibold text-foreground hover:underline">
               {site.email}
             </a>
             .

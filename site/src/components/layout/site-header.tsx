@@ -14,7 +14,7 @@ export function SiteHeader() {
           <ul className="flex gap-7 text-[15px]">
             {site.nav.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="text-slate-700 hover:text-indigo-600">
+                <Link href={item.href} className="text-neutral-700 hover:text-foreground">
                   {item.label}
                 </Link>
               </li>
@@ -39,7 +39,7 @@ export function FocusedHeader() {
     <header className="border-b border-line bg-white">
       <Container className="flex h-[68px] items-center justify-between">
         <Logo />
-        <Link href="/contact" className="text-sm font-medium text-slate-600 hover:text-indigo-600">
+        <Link href="/contact" className="text-sm font-medium text-neutral-600 hover:text-foreground">
           Questions? Talk to us
         </Link>
       </Container>

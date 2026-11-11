@@ -5,7 +5,7 @@ import { site, type PartnerStatus } from "@/content/site";
 export function PartnerBadge({ status = site.partnerStatus }: { status?: PartnerStatus }) {
   if (status === "none") return null;
   return (
-    <Badge variant="outline" className="h-8 rounded-lg border-indigo-200 bg-indigo-50 px-3 text-[13px] font-semibold text-indigo-700">
+    <Badge variant="outline" className="h-8 rounded-lg border-border bg-muted px-3 text-[13px] font-semibold text-foreground">
       {status === "premier" ? "Stripe Premier Partner" : "Stripe Partner"}
     </Badge>
   );
