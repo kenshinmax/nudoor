@@ -30,8 +30,8 @@ export default function ResourcesPage() {
                       {p.title}
                     </Link>
                   </h2>
-                  <p className="mt-2 text-neutral-500">{p.description}</p>
-                  <p className="mt-auto pt-4 text-sm text-neutral-500">
+                  <p className="mt-2 text-stone-500">{p.description}</p>
+                  <p className="mt-auto pt-4 text-sm text-stone-500">
                     <time dateTime={p.date}>{dateFmt.format(new Date(`${p.date}T00:00:00Z`))}</time> · {p.readingMinutes} min read
                   </p>
                 </Card>

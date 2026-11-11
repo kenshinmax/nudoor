@@ -45,7 +45,7 @@ function Field({ name, label, optional, errors, children }: { name: BriefField; 
     <div>
       <Label htmlFor={fieldId(name)} className="mb-1.5 text-sm font-semibold">
         {label}
-        {optional ? <span className="font-normal text-neutral-500"> (optional)</span> : null}
+        {optional ? <span className="font-normal text-stone-500"> (optional)</span> : null}
       </Label>
       {children}
       <FieldError name={name} errors={errors} />
@@ -111,9 +111,9 @@ export function BriefForm() {
   if (state.status === "success") {
     return (
       <div role="status" className="rounded-xl border border-border bg-muted p-6" data-testid="brief-success">
-        <CheckCircle2Icon aria-hidden className="size-6 text-neutral-900" />
+        <CheckCircle2Icon aria-hidden className="size-6 text-brand" />
         <h3 className="mt-2 text-lg font-bold">Brief sent</h3>
-        <p className="mt-1 text-neutral-700">{state.message}</p>
+        <p className="mt-1 text-stone-700">{state.message}</p>
       </div>
     );
   }
@@ -146,7 +146,7 @@ export function BriefForm() {
 
       <fieldset>
         <legend className="mb-2 text-sm font-semibold">
-          Interested in <span className="font-normal text-neutral-500">(optional)</span>
+          Interested in <span className="font-normal text-stone-500">(optional)</span>
         </legend>
         <div className="grid gap-2.5 sm:grid-cols-2">
           {interestOptions.map((o, i) => (

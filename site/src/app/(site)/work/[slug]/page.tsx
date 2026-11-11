@@ -30,12 +30,12 @@ export default async function CaseStudyPage({ params }: PageProps<"/work/[slug]"
           <div>
             <h2 className="text-2xl font-bold">The challenge</h2>
             {study.challenge.map((p) => (
-              <p key={p} className="mt-3 text-neutral-700">
+              <p key={p} className="mt-3 text-stone-700">
                 {p}
               </p>
             ))}
             <h2 className="mt-10 text-2xl font-bold">What we built</h2>
-            <ul className="mt-3 list-disc space-y-2 pl-5 text-neutral-700">
+            <ul className="mt-3 list-disc space-y-2 pl-5 text-stone-700">
               {study.built.map((b) => (
                 <li key={b}>{b}</li>
               ))}
@@ -43,16 +43,16 @@ export default async function CaseStudyPage({ params }: PageProps<"/work/[slug]"
             <h2 className="mt-10 text-lg font-bold">Stripe products used</h2>
             <ProductTags products={study.products} className="mt-3" />
             {study.quote ? (
-              <blockquote className="mt-10 border-l-[3px] border-neutral-900 pl-4 text-lg text-neutral-700 italic">
+              <blockquote className="mt-10 border-l-[3px] border-brand pl-4 text-lg text-stone-700 italic">
                 <p>&ldquo;{study.quote.text}&rdquo;</p>
-                <footer className="mt-2 text-sm text-neutral-500 not-italic">
+                <footer className="mt-2 text-sm text-stone-500 not-italic">
                   — {study.quote.name}, {study.quote.role}
                 </footer>
               </blockquote>
             ) : null}
           </div>
           <div className="h-fit rounded-3xl bg-ink p-6 md:p-8">
-            <h2 className="mb-4 font-mono text-xs font-semibold tracking-[0.06em] text-neutral-300 uppercase">Results</h2>
+            <h2 className="mb-4 font-mono text-xs font-semibold tracking-[0.06em] text-stone-300 uppercase">Results</h2>
             <MetricGrid metrics={study.metrics} />
           </div>
         </Container>

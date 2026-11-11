@@ -7,6 +7,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-logo: var(--font-montserrat), var(--font-geist), ui-sans-serif, system-ui, sans-serif;
   --font-heading: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
   --color-ring: var(--ring);
   --color-input: var(--input);
@@ -24,9 +25,11 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
-  --color-ink: #000000;
-  --color-surface: #f5f5f5;
-  --color-line: #e5e5e5;
+  --color-ink: #151311;
+  --color-brand: #ff5a00;
+  --color-brand-ink: #c23d00;
+  --color-surface: #f4f1ef;
+  --color-line: #d2ccc7;
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -36,26 +39,26 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-/* shadcn/ui neutral theme (matches ui.shadcn.com). */
+/* Warm palette: off-white canvas, near-black ink, orange accent. */
 :root {
-  --background: #ffffff;
-  --foreground: #000000;
+  --background: #f4f1ef;
+  --foreground: #151311;
   --card: #ffffff;
-  --card-foreground: #000000;
+  --card-foreground: #151311;
   --popover: #ffffff;
-  --popover-foreground: #000000;
-  --primary: #000000;
-  --primary-foreground: #fafafa;
-  --secondary: #f5f5f5;
-  --secondary-foreground: #171717;
-  --muted: #f5f5f5;
-  --muted-foreground: #737373;
-  --accent: #f5f5f5;
-  --accent-foreground: #171717;
-  --destructive: #e40014;
-  --border: #e5e5e5;
-  --input: #e5e5e5;
-  --ring: #a1a1a1;
+  --popover-foreground: #151311;
+  --primary: #151311;
+  --primary-foreground: #ffffff;
+  --secondary: #ebe6e2;
+  --secondary-foreground: #151311;
+  --muted: #ebe6e2;
+  --muted-foreground: #564e4a;
+  --accent: #ebe6e2;
+  --accent-foreground: #151311;
+  --destructive: #dc2626;
+  --border: #d2ccc7;
+  --input: #d2ccc7;
+  --ring: #ff5a00;
   --radius: 0.625rem;
 }
 

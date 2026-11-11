@@ -12,7 +12,7 @@ export default function NotFound() {
         <Container className="max-w-2xl py-20 md:py-28">
           <Eyebrow>404</Eyebrow>
           <h1 className="mt-3 text-4xl font-extrabold tracking-tight">We couldn&apos;t find that page</h1>
-          <p className="mt-3 text-neutral-600">It may have moved. These are good places to start:</p>
+          <p className="mt-3 text-stone-600">It may have moved. These are good places to start:</p>
           <div className="mt-7 flex flex-wrap gap-3">
             <Button asChild size="pill">
               <Link href="/services">See our services</Link>

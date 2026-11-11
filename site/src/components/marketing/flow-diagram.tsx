@@ -6,13 +6,13 @@ export function FlowDiagram({ nodes, metrics }: { nodes: readonly Node[]; metric
     <div
       role="img"
       aria-label="Illustration of a payment flow from checkout through fraud screening and billing to payouts"
-      className="relative overflow-hidden rounded-[20px] bg-ink p-7 text-neutral-200 shadow-[0_30px_60px_rgba(11,27,58,0.25)]"
+      className="relative overflow-hidden rounded-[20px] bg-ink p-7 text-stone-200 shadow-[0_30px_60px_rgba(11,27,58,0.25)]"
     >
       <div
         aria-hidden
         className="pointer-events-none absolute -top-[40%] -right-[20%] size-80 bg-[radial-gradient(circle,rgba(79,70,229,0.55),transparent_70%)]"
       />
-      <div className="relative mb-4 font-mono text-xs text-neutral-400">{"// what we build for you"}</div>
+      <div className="relative mb-4 font-mono text-xs text-stone-400">{"// what we build for you"}</div>
       <div className="relative">
         {nodes.map((node, i) => (
           <div key={node.title}>
@@ -20,9 +20,9 @@ export function FlowDiagram({ nodes, metrics }: { nodes: readonly Node[]; metric
             <div className="mb-2.5 flex items-center justify-between gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3.5">
               <div>
                 <strong className="text-[15px] text-white">{node.title}</strong>
-                <div className="font-mono text-xs text-neutral-400">{node.subtitle}</div>
+                <div className="font-mono text-xs text-stone-400">{node.subtitle}</div>
               </div>
-              <span className="shrink-0 rounded-full bg-muted0/15 px-2.5 py-0.5 font-mono text-xs text-neutral-300">
+              <span className="shrink-0 rounded-full bg-muted0/15 px-2.5 py-0.5 font-mono text-xs text-stone-300">
                 {node.pill}
               </span>
             </div>
@@ -33,7 +33,7 @@ export function FlowDiagram({ nodes, metrics }: { nodes: readonly Node[]; metric
         {metrics.map((m) => (
           <div key={m.label} className="rounded-[10px] bg-white/5 p-3">
             <b className="block text-[17px] text-white sm:text-xl">{m.value}</b>
-            <small className="text-xs text-neutral-400">{m.label}</small>
+            <small className="text-xs text-stone-400">{m.label}</small>
           </div>
         ))}
       </div>

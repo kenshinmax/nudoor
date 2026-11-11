@@ -1,11 +1,11 @@
 export type PartnerStatus = "none" | "partner" | "premier";
 
 export const site = {
-  name: "Brightline Payments",
+  name: "Nudoor Payments",
   tagline: "Stripe setup for small businesses",
   description:
     "Certified Stripe developers who help small businesses take payments online, in person, and on repeat, without the tech headaches.",
-  email: "hello@brightline.example",
+  email: "hello@nudoor.example",
   hours: "Mon–Fri, 9–6",
   areaServed: "United States",
   // Flip to "partner" only after Stripe accepts the application; this controls every partner mention on the site.

@@ -56,7 +56,7 @@ export function SectionHeader({
       <h2 id={id} className="mt-2 text-[clamp(28px,3.2vw,40px)] leading-tight font-bold tracking-tight text-balance">
         {title}
       </h2>
-      {subtitle ? <p className="mt-3 text-neutral-500 text-pretty">{subtitle}</p> : null}
+      {subtitle ? <p className="mt-3 text-stone-500 text-pretty">{subtitle}</p> : null}
     </div>
   );
 }
@@ -80,7 +80,7 @@ export function PageHero({
           <h1 className="mt-3 text-[clamp(32px,4.4vw,52px)] leading-[1.1] font-extrabold tracking-tight text-balance">
             {title}
           </h1>
-          {subtitle ? <p className="mt-4 max-w-2xl text-lg text-neutral-600 text-pretty">{subtitle}</p> : null}
+          {subtitle ? <p className="mt-4 max-w-2xl text-lg text-stone-600 text-pretty">{subtitle}</p> : null}
           {children ? <div className="mt-7 flex flex-wrap gap-3">{children}</div> : null}
         </div>
       </Container>

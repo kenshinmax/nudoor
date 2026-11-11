@@ -28,7 +28,7 @@ export default function SolutionsPage() {
                       {s.title}
                     </Link>
                   </h2>
-                  <p className="mt-2 text-neutral-500">{s.intro}</p>
+                  <p className="mt-2 text-stone-500">{s.intro}</p>
                   <Link href={`/solutions/${s.slug}`} className="mt-4 font-semibold text-foreground hover:text-foreground" aria-hidden tabIndex={-1}>
                     See how we help →
                   </Link>

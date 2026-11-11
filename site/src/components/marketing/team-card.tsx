@@ -7,13 +7,13 @@ export function TeamCard({ member, showBio = false }: { member: TeamMember; show
     <Card className="h-full flex-row items-start gap-4 rounded-xl p-6 text-base ring-line">
       <div
         aria-hidden
-        className="grid size-16 flex-none place-items-center rounded-full bg-linear-135 from-neutral-200 to-neutral-100 font-bold text-ink"
+        className="grid size-16 flex-none place-items-center rounded-full bg-linear-135 from-orange-100 to-stone-100 font-bold text-ink"
       >
         {member.initials}
       </div>
       <div>
         <b>{member.name}</b>
-        <p className="text-neutral-500">{member.role}</p>
+        <p className="text-stone-500">{member.role}</p>
         {earned.map((c) =>
           c.verifyUrl ? (
             <a key={c.name} href={c.verifyUrl} className="block font-mono text-xs text-foreground hover:underline">
@@ -25,7 +25,7 @@ export function TeamCard({ member, showBio = false }: { member: TeamMember; show
             </p>
           ),
         )}
-        {showBio ? <p className="mt-2 text-sm text-neutral-600">{member.bio}</p> : null}
+        {showBio ? <p className="mt-2 text-sm text-stone-600">{member.bio}</p> : null}
       </div>
     </Card>
   );

@@ -12,7 +12,7 @@ export function StepsTimeline({ steps }: { steps: readonly Step[] }) {
             {i < steps.length - 1 ? <span aria-hidden className="hidden h-0.5 flex-1 bg-line lg:block" /> : null}
           </div>
           <h3 className="mt-4 text-[19px] font-bold">{step.title}</h3>
-          <p className="mt-1 text-neutral-500">{step.body}</p>
+          <p className="mt-1 text-stone-500">{step.body}</p>
         </li>
       ))}
     </ol>

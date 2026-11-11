@@ -1,4 +1,4 @@
-# Brightline Payments site
+# Nudoor Payments site
 
 Marketing site for a small-business Stripe services partner. Built with Next.js (App Router), TypeScript, Tailwind CSS 4, and [shadcn/ui](https://ui.shadcn.com) components. The design follows `../index.html`; the full spec is in `../SPEC.md`.
 

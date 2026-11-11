@@ -6,6 +6,6 @@ let client: Stripe | null = null;
 
 export function getStripe(): Stripe | null {
   if (!env.STRIPE_SECRET_KEY) return null;
-  client ??= new Stripe(env.STRIPE_SECRET_KEY, { appInfo: { name: "brightline-site" } });
+  client ??= new Stripe(env.STRIPE_SECRET_KEY, { appInfo: { name: "nudoor-site" } });
   return client;
 }

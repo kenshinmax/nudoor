@@ -22,7 +22,7 @@ export default function ServicesPage() {
       <Section>
         <Container>
           <ServiceGrid services={services} />
-          <p className="mt-8 text-sm text-neutral-500">
+          <p className="mt-8 text-sm text-stone-500">
             Running a marketplace or platform? We also set up Stripe Connect for seller onboarding and payouts, quoted per project.
           </p>
         </Container>

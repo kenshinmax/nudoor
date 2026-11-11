@@ -31,7 +31,7 @@ export const legalData: z.input<typeof legalPageSchema>[] = [
     updated: "2026-11-01",
     sections: [
       { heading: "Stripe", body: ["Stripe and Stripe product names are trademarks of Stripe, Inc. We use them only to describe the products we work with."] },
-      { heading: "Our relationship with Stripe", body: ["Brightline Payments is an independent company. Any partner relationship with Stripe is stated explicitly on this site."] },
+      { heading: "Our relationship with Stripe", body: ["Nudoor Payments is an independent company. Any partner relationship with Stripe is stated explicitly on this site."] },
     ],
   },
 ];

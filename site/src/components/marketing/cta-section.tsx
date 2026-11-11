@@ -13,12 +13,12 @@ export function CtaSection({
   return (
     <section className="py-16 md:py-[88px]" aria-labelledby="cta-title">
       <Container>
-        <div className="rounded-3xl bg-linear-135 from-neutral-100 to-neutral-50 px-6 py-14 text-center md:p-16">
+        <div className="rounded-3xl bg-linear-135 from-orange-50 to-stone-50 px-6 py-14 text-center md:p-16">
           <Eyebrow>Let&apos;s talk</Eyebrow>
           <h2 id="cta-title" className="mt-2 text-[clamp(28px,3.2vw,40px)] font-bold tracking-tight">
             {title}
           </h2>
-          <p className="mx-auto mt-3 mb-6 max-w-[560px] text-neutral-500">{body}</p>
+          <p className="mx-auto mt-3 mb-6 max-w-[560px] text-stone-500">{body}</p>
           <div className="flex flex-wrap justify-center gap-3">
             <Button asChild size="pill">
               <Link href={site.bookCallHref} data-track="cta_book_call">

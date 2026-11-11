@@ -41,7 +41,7 @@ export default function PricingPage() {
           <SectionHeader id="all-services" eyebrow="All services" title="Starting prices" />
           <div className="overflow-x-auto rounded-xl border border-line">
             <table className="w-full min-w-[560px] text-left">
-              <thead className="bg-surface text-sm text-neutral-500">
+              <thead className="bg-surface text-sm text-stone-500">
                 <tr>
                   <th scope="col" className="px-5 py-3 font-semibold">Service</th>
                   <th scope="col" className="px-5 py-3 font-semibold">Price</th>
@@ -57,10 +57,10 @@ export default function PricingPage() {
                       </Link>
                     </th>
                     <td className="px-5 py-3.5">{servicePriceLabel(s)}</td>
-                    <td className="px-5 py-3.5 text-neutral-600">{s.timeline}</td>
+                    <td className="px-5 py-3.5 text-stone-600">{s.timeline}</td>
                   </tr>
                 ))}
-                <tr className="border-t border-line text-neutral-500">
+                <tr className="border-t border-line text-stone-500">
                   <th scope="row" className="px-5 py-3.5 font-normal">Marketplaces (Connect) add-on</th>
                   <td className="px-5 py-3.5">Quoted</td>
                   <td className="px-5 py-3.5">4–8 weeks</td>

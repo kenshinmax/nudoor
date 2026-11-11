@@ -13,10 +13,10 @@ export function CaseStudyCard({ study }: { study: CaseStudy }) {
           {study.headline}
         </Link>
       </h3>
-      <p className="mt-2 text-neutral-500">{study.summary}</p>
+      <p className="mt-2 text-stone-500">{study.summary}</p>
       <ProductTags products={study.products} className="mt-4" />
-      <p className="mt-auto pt-5 font-mono text-2xl font-bold text-neutral-700">
-        {lead.value} <span className="font-sans text-sm font-normal text-neutral-500">{lead.label}</span>
+      <p className="mt-auto pt-5 font-mono text-2xl font-bold text-stone-700">
+        {lead.value} <span className="font-sans text-sm font-normal text-stone-500">{lead.label}</span>
       </p>
     </Card>
   );

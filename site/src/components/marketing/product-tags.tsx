@@ -10,7 +10,7 @@ export function ProductTags({ products, className, dark = false }: { products: r
             variant="outline"
             className={cn(
               "h-6 rounded-md px-2 font-mono text-xs font-normal",
-              dark ? "border-white/20 text-neutral-300" : "border-line bg-surface text-neutral-600",
+              dark ? "border-white/20 text-stone-300" : "border-line bg-surface text-stone-600",
             )}
           >
             {p}

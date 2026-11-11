@@ -24,7 +24,7 @@ export default function ContactPage() {
               <h2 id="book-title" className="flex items-center gap-2 text-xl font-bold">
                 <CalendarDaysIcon aria-hidden className="size-5 text-foreground" /> Book a free call
               </h2>
-              <p className="mt-1 text-neutral-500">20 minutes. You&apos;ll leave with at least one concrete improvement.</p>
+              <p className="mt-1 text-stone-500">20 minutes. You&apos;ll leave with at least one concrete improvement.</p>
               {publicEnv.calLink ? (
                 <iframe
                   src={`https://cal.com/${publicEnv.calLink}?embed=true&theme=light`}
@@ -35,7 +35,7 @@ export default function ContactPage() {
               ) : (
                 <div className="mt-5 rounded-lg bg-surface p-5">
                   <p className="font-medium">Email us to pick a time</p>
-                  <p className="mt-1 text-sm text-neutral-500">We&apos;ll reply with a few slots within one business day.</p>
+                  <p className="mt-1 text-sm text-stone-500">We&apos;ll reply with a few slots within one business day.</p>
                   <a
                     href={`mailto:${site.email}?subject=${encodeURIComponent("Book a free call")}`}
                     className="mt-3 inline-flex items-center gap-2 font-semibold text-foreground hover:underline"
@@ -50,7 +50,7 @@ export default function ContactPage() {
           <section id="brief" aria-labelledby="brief-title" className="scroll-mt-24">
             <Card className="gap-0 rounded-xl p-6 text-base ring-line">
               <h2 id="brief-title" className="text-xl font-bold">Send a project brief</h2>
-              <p className="mt-1 mb-6 text-neutral-500">A few details help us come back with a useful quote.</p>
+              <p className="mt-1 mb-6 text-stone-500">A few details help us come back with a useful quote.</p>
               <BriefForm />
             </Card>
           </section>

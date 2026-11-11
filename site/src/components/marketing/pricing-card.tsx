@@ -22,23 +22,23 @@ export function PricingCard({ pkg }: { pkg: Package }) {
       id={pkg.id}
       className={cn(
         "relative h-full gap-0 overflow-visible rounded-xl p-6 text-base ring-line",
-        pkg.featured && "ring-2 ring-primary",
+        pkg.featured && "ring-2 ring-brand",
       )}
     >
       {pkg.featured ? (
         <Badge className="absolute -top-3 left-6 rounded-full bg-primary px-2.5 text-xs font-bold">Most popular</Badge>
       ) : null}
       <h3 className="text-[19px] font-bold">{pkg.title}</h3>
-      <p className="text-neutral-500">{pkg.tagline}</p>
+      <p className="text-stone-500">{pkg.tagline}</p>
       <p className="mt-3 text-[34px] leading-tight font-extrabold">
         {formatPrice(pkg.price)}
         {pkg.plus ? "+" : ""}
       </p>
-      <p className="text-sm text-neutral-500">{pkg.priceSuffix}</p>
+      <p className="text-sm text-stone-500">{pkg.priceSuffix}</p>
       <ul className="mt-4 mb-6 flex-1">
         {pkg.features.map((f) => (
           <li key={f} className="flex gap-2.5 border-b border-line py-2 text-[15px]">
-            <CheckIcon aria-hidden className="mt-0.5 size-4 flex-none text-neutral-900" strokeWidth={3} />
+            <CheckIcon aria-hidden className="mt-0.5 size-4 flex-none text-brand" strokeWidth={3} />
             {f}
           </li>
         ))}

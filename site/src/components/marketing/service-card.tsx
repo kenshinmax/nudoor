@@ -19,11 +19,11 @@ export function ServiceCard({ service, index }: { service: Service; index: numbe
         {String(index + 1).padStart(2, "0")}
       </div>
       <h3 className="text-[19px] leading-snug font-bold">{service.title}</h3>
-      <p className="mt-2 text-neutral-500">{service.summary}</p>
+      <p className="mt-2 text-stone-500">{service.summary}</p>
       <ProductTags products={service.stripeProducts} className="mt-3.5 mb-4" />
       <BillingModelTag models={service.billingModels} />
       {service.footnote ? (
-        <p data-billing-callout="footnote" className="mb-3 text-[13px] text-neutral-500">
+        <p data-billing-callout="footnote" className="mb-3 text-[13px] text-stone-500">
           {service.footnote}
         </p>
       ) : null}

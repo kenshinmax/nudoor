@@ -18,7 +18,7 @@ const footerLinks = [
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-line py-12 text-sm text-neutral-500">
+    <footer className="border-t border-line py-12 text-sm text-stone-500">
       <Container>
         <div className="flex flex-wrap justify-between gap-6">
           <div>
@@ -50,7 +50,7 @@ export function SiteFooter() {
 
 export function FocusedFooter() {
   return (
-    <footer className="border-t border-line py-8 text-xs text-neutral-500">
+    <footer className="border-t border-line py-8 text-xs text-stone-500">
       <Container className="flex flex-wrap justify-between gap-4">
         <p className="max-w-[720px]">{partnerDisclaimer()}</p>
         <p className="flex gap-4">

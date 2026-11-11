@@ -8,7 +8,7 @@ export function ProblemGrid({ items }: { items: readonly Problem[] }) {
           <span aria-hidden className="mt-2 size-2.5 flex-none rounded-full bg-muted0" />
           <div>
             <b className="mb-1 block">{p.title}</b>
-            <span className="text-neutral-500">{p.body}</span>
+            <span className="text-stone-500">{p.body}</span>
           </div>
         </li>
       ))}

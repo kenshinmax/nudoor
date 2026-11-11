@@ -10,7 +10,7 @@ export default function CheckoutUnavailablePage() {
   return (
     <Container className="max-w-2xl py-16 md:py-24">
       <h1 className="text-3xl font-extrabold tracking-tight">Online checkout isn&apos;t available right now</h1>
-      <p className="mt-3 text-neutral-600">
+      <p className="mt-3 text-stone-600">
         You haven&apos;t been charged. Book a quick call or email{" "}
         <a href={`mailto:${site.email}?subject=${encodeURIComponent("Payments Health Check")}`} className="font-semibold text-foreground hover:underline">
           {site.email}
